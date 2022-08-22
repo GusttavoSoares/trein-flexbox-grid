@@ -1,0 +1,7 @@
+Display flex deve ser colocado no elemento pai, dessa forma os elementos filhos vão obdecer a regra colocada no elemento pai
+
+Há duas direções: row (esquerda para direita) e column (cima para baixo)
+
+É possível alterar posicionamento de um item individualmente também
+
+É possível alterar o alinhamento dos elementos e a ordem também
