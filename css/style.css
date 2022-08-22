@@ -1,3 +1,6 @@
+body {
+    padding-bottom: 500px;
+}
 .container {
     background-color: #eef;
     border: 2px solid purple;
@@ -6,7 +9,7 @@
     height: 300px;
     display: flex;
     /* alinhamento horizontal */
-    justify-content: center;
+    justify-content: space-between;
     /* alinhamento vertical */
     align-items: center;
     /* quando não tiver mais espaço ele quebra para a proxima linha */
@@ -19,3 +22,22 @@
     height: 50px;
     width: 50px;
 }
+
+.box {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    /* caso não coloque uma largura, é colocado o mínimo possível automaticamente */
+    flex-basis: 30px; /* todos os elementos tem 30px no inicio do layout */
+}
+
+#item-1 {
+    flex-grow: 2;
+}
+
+#item-2, #item-3 {
+    flex-grow: 1;
+}
+
+/* flex: 1 1 50px = flex-grow, shrink basis */
+/* flex-shrink determina o quanto um elemento vai diminuir em relação os outros elements */
